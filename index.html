@@ -9,6 +9,20 @@
 <hr>
 <h2 style="font-family:times new roman:"><b>Conference  paper:  The cosmic journey of black holes: from singularity to vanishing point. </b></h2>
 <hr>
+    <script>
+      function displayWordCount(sectionId,outputId){
+        const text = document.getElementById(sectionId).textContent;
+        const wordArray = text.trim().split(/\+);
+        return wordCount;
+      }
+      function displayWordCount(){
+        const IntroductionCount = displayWordCount("Intro");
+        const AnalysisCount = displayWordCount("Analysis");
+        const totalWordCount = IntroductionCount + AnalysisCount;
+        document.getElementById("totalWordCount").innerText = 'total word count: ' ${totalWordCount}';
+      }
+      window.onload = displayTotalWordCount;
+    </script>
      <!style for tables>
        <style>
          table {
@@ -64,12 +78,16 @@
         </th>
       </table>
       <h3 id ="abstract"><b>Abstract </b></h3>
+      <pre id="Intro">
       <p>In 1916 albert einstein predicted the existence of black holes, in 1963 The term black hole was used in Life and Science News magazines 
         for the first time, The first black hole to be discovered was in 1971 by Louise Webster, Paul Murdin, and Thomas Bolton.
         for hundreds of years physicians have speculated and discussed the dark enigma we now call black holes.
         Through this article I will be exploring the life cycle of black holes. To do this I will discuss the formation of black holes, then analyse the operations of them,
         Finishing with the fate of black holes. I aim to explain the black holes processes and features throughout the article. So, let us try and understand the mystery of the densest objects in the universe.
       </p>
+      </pre>
+      <h3> analysis and discussion </h3>
+      <pre id = "Analysis">
       <h3 id = "formation"> the formation of black holes   </h3>
       <p>The story of a black hole starts with stars, in their core nuclear fusion fuses hydrogen atoms into helium, this leads to a great deal of energy.
         This energy is the push back against gravity, the gravity balances out with the force of the nuclear fusion if there is still fusion in the core. 
@@ -116,6 +134,8 @@ Black holes may be the enigmas of our universe, but they still do have an end, h
       </p>
 
 <button><a href= "RefList.html"> Reference List </a> </button>
+      </pre>
+      
     
 <div id="Last-updated">Loading last update time...</div>
 
